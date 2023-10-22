@@ -38,10 +38,8 @@ main {
     justify-content: center;
 }
 
-/*centers the text display box and add styling such as box shadow and the font style*/
+/*add styling such as box shadow and the font style*/
 #display {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 50px;
     margin: 0 0 30px 0;
@@ -69,6 +67,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin: 0;
+    justify-items: center;
 }
 
 input[type="button"] {
