@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--links the font roboto light-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>CALCULATOR</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <div class="grid-calc">
+
+                <form>
+                    <div>
+                        <!--sets to readonly so user doesn't edit the display-->
+                        <input type="text" id="display" readonly>
+                    </div>
+
+                    <!-- <section class="memory">
+                        <input type="button" value="mc">
+                        <input type="button" value="m+">
+                        <input type="button" value="m-">
+                        <input type="button" value="mr">
+                    </section> -->
+
+                    <!--div called grid to later display the buttons into 4 columns-->
+                    <div class="grid">
+                        <input type="button" value="AC">
+                        <input type="button" value="±">
+                        <input type="button" value="%">
+                        <input type="button" value="/">
+                        <input type="button" value="9">
+                        <input type="button" value="8">
+                        <input type="button" value="7">
+                        <input type="button" value="*">
+                        <input type="button" value="6">
+                        <input type="button" value="5">
+                        <input type="button" value="4">
+                        <input type="button" value="-">
+                        <input type="button" value="3">
+                        <input type="button" value="2">
+                        <input type="button" value="1">
+                        <input type="button" value="+">
+                        <input type="button" value="0" class="zero">
+                        <input type="button" value=".">
+                        <input type="button" value="=">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Nikki Wang, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
