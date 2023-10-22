@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //converts the buttons into an array
     let buttons = Array.from(document.querySelectorAll('input[type="button"]'));
 
+    //variable to store memory value
+    let memory = 0;
+
     //function for when each button type/value is clicked
     function handleButtonClick(buttonValue) {
         //the all clear button function
@@ -24,12 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (buttonValue === '=') {
             try {
                 let result = eval(display.value);
-
                 //ternary function to change the 'Infinity' display to 'Error'
                 display.value = result === Infinity ? 'Error' : result;
             } catch {
                 display.value = 'Error';
             }
+        //memory buttons to add, subtract, memory recall, and memory clear
+        } else if (buttonValue === 'm+') {
+            memory += parseFloat(display.value);
+        } else if (buttonValue === 'm-') {
+            memory -= parseFloat(display.value);
+        } else if (buttonValue === 'mr') {
+            display.value = memory;
+        } else if (buttonValue === 'mc') {
+            memory = 0;
         } else {
             display.value += buttonValue;
         }
