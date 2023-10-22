@@ -68,7 +68,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 input[type="button"] {
@@ -87,7 +87,7 @@ input[type="button"] {
 /*sets the zero button to span two columns*/
 input[type="button"].zero {
     grid-column: span 2;
-    width: 130px;
+    width: 100%;
 }
 
 .footer {
@@ -106,13 +106,30 @@ input[type="button"].zero {
     color: #c9dab5;
 }
 
-/* 
-color palette:
-#b6d394
-#6e7d5f
-#859273
-#8fa07c
-#5c6d43
-#546c46 
-#c9dab5 
-#c5d6a3 */
+@media screen and (max-width: 400px) {
+    .header {
+        height: 70px;
+    }
+    h1 {
+        font-size: 35px;
+        padding: 15px 0;
+    }
+    .grid-calc {
+        padding: 25px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    #display {
+        height: 40px;
+        width: 90%;
+    }
+    .grid {
+        grid-gap: 3.5px;
+    }
+    input[type="button"] {
+        width: 50px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
