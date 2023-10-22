@@ -1,0 +1,118 @@
+/*added a background image that repeats*/
+body {
+    font-family: Roboto Condensed;
+    margin: 0;
+    padding: 0;
+    background: url(background.jpeg);
+    background-size: auto;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #546c46;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 20px 0;
+    font-size: 50px;
+    color: #c9dab5;
+}
+
+main {
+    height: 100vh;
+}
+
+/*places the calculator mostly in the center*/
+.calculator {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*centers the text display box and add styling such as box shadow and the font style*/
+#display {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 0 30px 0;
+    color: #11180f;
+    font-size: 30px;
+    text-align: right;
+    font-family: inherit;
+    font-weight: bold;    
+    border: none;
+    background-color: #c9dab5;
+    box-shadow: 5px 5px rgba(11, 37, 13, 0.3);
+}
+
+.grid-calc {
+    padding: 60px;
+    background-color: #546c46;
+    border: 3px solid #11180f;
+    border-radius: 8px;
+    box-shadow: 5px 5px rgba(11, 37, 13, 0.4);
+}
+
+/*creates the grid columns*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: #e6ebda;
+    color: #11180f;
+    border: none;
+    box-shadow: 5px 5px rgba(11, 37, 13, 0.3);
+    border-radius: 1em;
+}
+
+/*sets the zero button to span two columns*/
+input[type="button"].zero {
+    grid-column: span 2;
+    width: 130px;
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color: #546c46;
+    margin: 0;
+    padding: 0;
+}
+
+.footer p {
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    color: #c9dab5;
+}
+
+/* 
+color palette:
+#b6d394
+#6e7d5f
+#859273
+#8fa07c
+#5c6d43
+#546c46 
+#c9dab5 
+#c5d6a3 */
